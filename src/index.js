@@ -1,12 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React, { Component } from "react";
+import ReactDOM from "react-dom";
+import Counter from "./counter";
+import FormServer from "./form_server";
+import MaterialUI from "./material";
+import Dashbord, { ChartContainer } from "./dashboard/Dashboard";
+import Box from "./try_box";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import AppStateTest from "./setstate";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// const element = <h1>Hello World</h1>;
+// ReactDOM.render(element, document.getElementById("root")); // sera ecrase par prochaine commande similaire
+// ReactDOM.render(<App />, document.getElementById("root"));
+
+// ReactDOM.render(<Counter />, document.getElementById("root"));
+
+// ReactDOM.render(<MaterialUI />, document.getElementById("root"));
+
+ReactDOM.render(<Dashbord />, document.getElementById("root"));
+
+// ReactDOM.render(
+//   <ChartContainer match="eric" />,
+//   document.getElementById("root")
+// );
