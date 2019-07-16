@@ -5,6 +5,7 @@ import FormServer from "./form_server";
 import MaterialUI from "./material";
 import Dashbord, { ChartContainer } from "./dashboard/Dashboard";
 import Box from "./try_box";
+// import Password from "./password.json";
 
 // import AppStateTest from "./setstate";
 

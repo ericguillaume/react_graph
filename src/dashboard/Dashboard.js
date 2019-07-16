@@ -102,6 +102,18 @@ export function PaperWChart({ match, location }) {
   let params = new URLSearchParams(location.search);
   const classes = useStyles();
   const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
+
+  // console.log(window.location.host);
+
+  // fetch("http://" + window.location.host + "/zeserver", {
+  //   method: "get"
+  // })
+  //   .then(data => {
+  //     console.log("data received", data);
+  //   })
+  //   .catch(function(error) {
+  //     console.log("Request failed", error);
+  //   });
   return (
     <Paper className={fixedHeightPaper}>
       <Chart name2={match.path} name={params.get("name")} />
